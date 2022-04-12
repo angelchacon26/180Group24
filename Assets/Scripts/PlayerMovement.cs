@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Author: [Chacon, Angelica]
+ * Date: [04/12/2022]
+ * [PlayerMovement script.]
+ */
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
@@ -64,7 +68,6 @@ public class PlayerMovement : MonoBehaviour
         transform.position = startPos;
         lives--;
      
-
     }
 
 
