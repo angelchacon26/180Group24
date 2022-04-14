@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 /*
  * Author: [Chacon, Angelica]
  * Date: [04/12/2022]
@@ -15,12 +17,16 @@ public class PlayerMovement : MonoBehaviour
     public int lives = 3;
     private Vector3 startPos;
     private Rigidbody rigid_body;
-    
+    public Text coinText;
+    public Text livesText;
+    public Text gameOverText;
+
     // Start is called before the first frame update
     void Start()
     {
         startPos = transform.position;
         rigid_body = GetComponent<Rigidbody>();
+        SetCountText();
     }
 
     // Update is called once per frame
@@ -62,12 +68,30 @@ public class PlayerMovement : MonoBehaviour
         {
             Respawn();
         }
+        print("Trigger");
+        if (other.gameObject.tag == "Coin")
+        {
+            coins++;
+            print("Coin" + coins);
+            other.gameObject.SetActive(false);
+            SetCountText();
+
+        }
     }
     public void Respawn()
     {
         transform.position = startPos;
         lives--;
      
+    }
+    void SetCountText()
+    {
+        coinText.text = "Coins :" + coins.ToString();
+        livesText.text = "Lives :" + lives.ToString();
+        if (lives <= 0)
+        {
+            gameOverText.text = "Game Over";
+        }
     }
 
 
