@@ -43,7 +43,14 @@ public class PlayerMovement : MonoBehaviour
         {
             add_position += Vector3.right * Time.deltaTime * speed;
         }
-        
+        if (Input.GetKey("w"))
+        {
+            add_position += Vector3.forward * Time.deltaTime * speed;
+        }
+        if (Input.GetKey("s"))
+        {
+            add_position += Vector3.back * Time.deltaTime * speed;
+        }
         //Jumping using space key
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, 1.5f))
@@ -82,15 +89,17 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.position = startPos;
         lives--;
+        SetCountText();
      
     }
-    void SetCountText()
+    public void SetCountText()
     {
         coinText.text = "Coins :" + coins.ToString();
         livesText.text = "Lives :" + lives.ToString();
         if (lives <= 0)
         {
             gameOverText.text = "Game Over";
+            this.gameObject.SetActive(false);
         }
     }
 
