@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public Text coinText;
     public Text livesText;
     public Text gameOverText;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +75,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Respawn();
         }
+        if (other.tag == "Enemy")
+        {
+            Respawn();
+        }
         print("Trigger");
         if (other.gameObject.tag == "Coin")
         {
@@ -90,6 +94,7 @@ public class PlayerMovement : MonoBehaviour
         transform.position = startPos;
         lives--;
         SetCountText();
+
      
     }
     public void SetCountText()

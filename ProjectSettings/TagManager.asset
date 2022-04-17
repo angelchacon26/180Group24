@@ -6,6 +6,18 @@ TagManager:
   tags:
   - Spike
   - Coin
+  - Yellow Keys
+  - Red Keys
+  - Portal
+  - Green Keys
+  - Blue Door
+  - Pink Keys
+  - Yellow Door
+  - Green Door
+  - Red Door
+  - Pink Door
+  - Blue Keys
+  - Enemy
   layers:
   - Default
   - TransparentFX
