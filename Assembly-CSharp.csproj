@@ -56,6 +56,7 @@
     <Compile Include="Assets/Scripts/Camera.cs" />
     <Compile Include="Assets/Scripts/DoorsScript.cs" />
     <Compile Include="Assets/Scripts/EnemyMove.cs" />
+    <Compile Include="Assets/Scripts/Laser.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
