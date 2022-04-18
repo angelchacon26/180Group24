@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public Text livesText;
     public Text gameOverText;
     
+
     // Start is called before the first frame update
     void Start()
     {
@@ -88,6 +89,30 @@ public class PlayerMovement : MonoBehaviour
             SetCountText();
 
         }
+        if (other.gameObject.tag == "Door")
+        {
+            print("Ran into door");
+            if (coins >= other.gameObject.GetComponent<Door>().number_of_coins)
+            
+            {
+                coins -= other.gameObject.GetComponent<Door>().number_of_coins;
+              
+                other.gameObject.SetActive(false);
+            }
+        }
+        if (other.gameObject.tag == "Door Green")
+        {
+            print("Ran into door without keys");
+            if (coins >= other.gameObject.GetComponent<Door>().number_of_coins)
+            
+            {
+                coins -= other.gameObject.GetComponent<Door>().number_of_coins;
+                print("Had enough coins");
+                
+                other.gameObject.SetActive(false);
+            }
+        }
+
     }
     public void Respawn()
     {

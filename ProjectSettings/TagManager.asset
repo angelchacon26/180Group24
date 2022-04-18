@@ -18,6 +18,9 @@ TagManager:
   - Pink Door
   - Blue Keys
   - Enemy
+  - Door Yellow
+  - Door
+  - Door Green
   layers:
   - Default
   - TransparentFX
