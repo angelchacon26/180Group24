@@ -1,22 +1,27 @@
 ﻿<Properties StartupConfiguration="{A16C7FEB-CAB7-A1AF-233C-BD5DB7BB46EB}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Laser.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMovement.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="81" Column="10" />
-      <File FileName="Assets/Scripts/Camera.cs" Line="23" Column="2" />
-      <File FileName="Assets/Scripts/EnemyMove.cs" Line="61" Column="1" />
-      <File FileName="Assets/Scripts/Laser.cs" Line="16" Column="4" />
+      <File FileName="Assets/Scripts/Camera.cs" />
+      <File FileName="Assets/Scripts/EnemyMove.cs" />
+      <File FileName="Assets/Scripts/Laser.cs" />
+      <File FileName="Assets/Scripts/DoorsScript.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="180Group24" expanded="True" selected="True" />
+          <Node name="180Group24" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fb18ebc0-9237-40f7-a9ae-91a9b7da947d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="618fa55e-082b-4305-8809-117c1ead6704" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
