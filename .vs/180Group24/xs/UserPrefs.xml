@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{A16C7FEB-CAB7-A1AF-233C-BD5DB7BB46EB}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyMove.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="81" Column="10" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="91" Column="1" />
       <File FileName="Assets/Scripts/Camera.cs" />
-      <File FileName="Assets/Scripts/EnemyMove.cs" />
+      <File FileName="Assets/Scripts/EnemyMove.cs" Line="61" Column="1" />
       <File FileName="Assets/Scripts/Laser.cs" />
       <File FileName="Assets/Scripts/DoorsScript.cs" />
     </Files>
@@ -11,8 +11,10 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="180Group24" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
-              <Node name="Scripts" expanded="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="EnemyMove.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
