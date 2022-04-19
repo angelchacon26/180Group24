@@ -102,7 +102,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if(other.tag == "Portal")
         {
-            Scene_Switch.instance.switchScene(3);
+            Scene_Switch.instance.switchScene(1);
             
         }
 
