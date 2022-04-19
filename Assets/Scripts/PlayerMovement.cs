@@ -100,19 +100,7 @@ public class PlayerMovement : MonoBehaviour
                 other.gameObject.SetActive(false);
             }
         }
-        if (other.gameObject.tag == "Door Green")
-        {
-            print("Ran into door without keys");
-            if (coins >= other.gameObject.GetComponent<Door>().number_of_coins)
-            
-            {
-                coins -= other.gameObject.GetComponent<Door>().number_of_coins;
-                print("Had enough coins");
-                
-                other.gameObject.SetActive(false);
-            }
-        }
-
+      
     }
     public void Respawn()
     {
