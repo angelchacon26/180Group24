@@ -2301,7 +2301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goingLeft: 0
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 488115262}
   timeBetweenShots: 2
   startDelay: 0
 --- !u!1 &853841388
