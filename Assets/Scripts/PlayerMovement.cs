@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
     public Text coinText;
     public Text livesText;
     public Text gameOverText;
-    
 
     // Start is called before the first frame update
     void Start()
@@ -93,14 +92,15 @@ public class PlayerMovement : MonoBehaviour
         {
             print("Ran into door");
             if (coins >= other.gameObject.GetComponent<Door>().number_of_coins)
-            
+
             {
                 coins -= other.gameObject.GetComponent<Door>().number_of_coins;
-              
+
                 other.gameObject.SetActive(false);
             }
+
         }
-      
+
     }
     public void Respawn()
     {
