@@ -100,6 +100,11 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
+        if(other.tag == "Portal")
+        {
+            Scene_Switch.instance.switchScene(3);
+            
+        }
 
     }
     public void Respawn()
@@ -120,6 +125,6 @@ public class PlayerMovement : MonoBehaviour
             this.gameObject.SetActive(false);
         }
     }
-
+    
 
 }
